@@ -1,20 +1,35 @@
-## Criando SQL Azure serverless no Azure gratuito
+# Lista de variaveis utilizadas nos arquivos de terraform
 
-#### Disclaimer: Utilizar somente para fins de estudo e testes da tecnologia
+# Gere a área de recursos em: https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=javascript&source=learn
+# Após gerar, entre em https://portal.azure.com/#settings/directory e alterar para o diretório da Sandbox
+# Por fim, entre em https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups e copie e cole o nome do grupo de recursos aqui em baixo
 
-**Prérequisitos:**
-
-- Azure CLI - https://learn.microsoft.com/pt-br/cli/azure/
-- Visual Studio Code - https://code.visualstudio.com/download
-- SQL Server Management Studio - https://learn.microsoft.com/pt-br/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
-- Conta _@outlook.com_ específica para esta atividade
+variable "resource_group_name" {
+  default = "learn-81e3d56a-55c3-4c5f-98e4-475b0c0f9c0b"  
+}
+# NÃO ESQUEÇA DE ALTERAR LÁ EM BAIXO O SEU IP
 
 
-**Roteiro:**
+variable "location" {
+  default = "Brazil South"
+}
 
-1. Ativar uma Sandbox MS Learn - Concierge Subscription (4 hora de duração) - https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=powershell.
-2. Ajustar o código Terraform (Resource group da sua Sandbox + Regra de FW com o IP de saída de sua internet).
-3. Logar no Azure através do Terminal do VScode via Azure CLI.
-4. Executar o código Terraform.
-5. Logar no portal.azure.com e conferir o deploy do SQL do Azure.
-6. Logar no SSMS e validar a conexão com o SQL a partir do seu computador.
+variable "usuario_admin" {
+  default = "lucas1234"
+}
+
+variable "password" {
+  default = "Adm-1234"
+}
+
+# Vai em https://meuip.com.br/ e cole ele aqui
+variable "ip" {
+  default = "189.8.209.3"
+}
+
+# INSTALE O AZURE CLI E RODE UM "AZ LOGIN" PARA LOGAR NA AZURE 
+# RODE "TERRAFORM INIT" DPS, "TERRAFORM VALIDADE", SE DER ERRO, SE VIRE
+# POR FIM, RODE "TERRAFORM PLAN" E "TERRAFORM APPLY"
+
+# AGORA É SÓ ENTRAR NO BANCO QUE VOCÊ CRIOU NO PORTAL E ADICIONAR O SEU IP NO FIREWALL
+# CLIQUE LÁ NO SERVER E PESQUISE POR REDE
