@@ -1,7 +1,11 @@
  Lista de variaveis utilizadas nos arquivos de terraform
 
- Gere a área de recursos em: https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=javascript&source=learn
- 
+ Gere a área de recursos em: 
+
+https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-azure-functions/5-add-logic-to-the-function-app?pivots=javascript&source=learn
+ou
+https://learn.microsoft.com/pt-br/training/modules/build-api-azure-functions/2-exercise-setup-project
+
  Após gerar, entre em https://portal.azure.com/#settings/directory e alterar para o diretório da Sandbox
  
  Por fim, entre em https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups e copie e cole o nome do grupo de recursos aqui em baixo
@@ -16,6 +20,10 @@ variable "resource_group_name" {
 variable "ip" {
   default = "189.8.209.3"
 }
+
+delete os arquivos:
+terraform.tfstate
+.terraform.lock.hcl
 
  INSTALE O AZURE CLI E RODE UM "AZ LOGIN" PARA LOGAR NA AZURE 
  
