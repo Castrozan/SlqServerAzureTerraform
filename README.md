@@ -32,15 +32,15 @@ Exclua os arquivos:
 terraform.tfstate
 .terraform.lock.hcl
 
-INSTALE O AZURE CLI E RODE UM "AZ LOGIN" PARA LOGAR NA AZURE
+INSTALE O AZURE CLI E RODE UM `AZ LOGIN` PARA LOGAR NA AZURE
 
 Você pode baixar o Azuer Cli com o comando 
 
 `winget install -e --id Microsoft.AzureCLI`
  
-RODE "TERRAFORM INIT" DPS, "TERRAFORM VALIDADE", SE DER ERRO, SE VIRE
+RODE `TERRAFORM INIT` DPS, `TERRAFORM VALIDADE`, SE DER ERRO,  ̶S̶E̶ ̶V̶I̶R̶E̶  Chama aee
  
-POR FIM, RODE "TERRAFORM PLAN" E "TERRAFORM APPLY"
+POR FIM, RODE `TERRAFORM PLAN` E `TERRAFORM APPLY`
 
 Você pode baixar o terraform com o comando abaixo
 
