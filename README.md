@@ -1,4 +1,4 @@
-Como configuirar e provisionar um banco de dados SQL Server via Terraform
+### Como configuirar e provisionar um banco de dados SQL Server via Terraform
 
 Gere a área restrita em: 
 
@@ -12,16 +12,21 @@ Após gerar a área restrita, entre em https://portal.azure.com/#settings/direct
  
 Por fim, entre em https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups e copie e cole o nome do grupo de recursos no arquivo variables.tf
 
+```hcl
 variable "resource_group_name" {
   default = "learn-81e3d56a-55c3-4c5f-98e4-475b0c0f9c0b"  <--- aqui
 }
+```
 
 No mesmo arquivo, altere a variável de IP para o seu IP atual 
 
 Consulte seu ip em https://meuip.com.br/ e cole ele aqui
+
+```hcl
 variable "ip" {
   default = "189.8.209.3"    <--- aqui
 }
+```
 
 Exclua os arquivos:
 terraform.tfstate
@@ -31,7 +36,7 @@ INSTALE O AZURE CLI E RODE UM "AZ LOGIN" PARA LOGAR NA AZURE
 
 Você pode baixar o Azuer Cli com o comando 
 
-winget install -e --id Microsoft.AzureCLI
+`winget install -e --id Microsoft.AzureCLI`
  
 RODE "TERRAFORM INIT" DPS, "TERRAFORM VALIDADE", SE DER ERRO, SE VIRE
  
@@ -39,4 +44,4 @@ POR FIM, RODE "TERRAFORM PLAN" E "TERRAFORM APPLY"
 
 Você pode baixar o terraform com o comando abaixo
 
-winget install terraform
+`winget install terraform`
