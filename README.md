@@ -14,7 +14,7 @@ Por fim, entre em https://portal.azure.com/#view/HubsExtension/BrowseResourceGro
 
 ```hcl
 variable "resource_group_name" {
-  default = "learn-81e3d56a-55c3-4c5f-98e4-475b0c0f9c0b"  <--- aqui
+  default = "learn-81e3d56a-55c3-4c5f-98e4-475b0c0f9c0b"  <--- aqui entre as aspas
 }
 ```
 
@@ -24,7 +24,7 @@ Consulte seu ip em https://meuip.com.br/ e cole ele aqui
 
 ```hcl
 variable "ip" {
-  default = "189.8.209.3"    <--- aqui
+  default = "189.8.209.3"    <--- aqui entre as aspas
 }
 ```
 
@@ -32,16 +32,22 @@ Exclua os arquivos:
 terraform.tfstate
 .terraform.lock.hcl
 
-INSTALE O AZURE CLI E RODE UM `AZ LOGIN` PARA LOGAR NA AZURE
+Siga os passos em https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli para baixar o Azure CLI
 
-Você pode baixar o Azuer Cli com o comando 
-
-`winget install -e --id Microsoft.AzureCLI`
+Ao baixar abra um terminal e rode o comando `AZ LOGIN`
  
-RODE `TERRAFORM INIT` DPS, `TERRAFORM VALIDADE`, SE DER ERRO,  ̶S̶E̶ ̶V̶I̶R̶E̶  Chama aee
- 
-POR FIM, RODE `TERRAFORM PLAN` E `TERRAFORM APPLY`
+Siga os passos em https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli para baixar o Terraform
 
-Você pode baixar o terraform com o comando abaixo
+Ao baixar abra um terminal acesse a pasta com os arquivos do repositório do git e rode o comando `TERRAFORM INIT`
 
-`winget install terraform`
+Agora é só rodar um `TERRAFORM APPLY` e aceitar o script com um `yes`
+
+Seu servidor e banco de dados SQL Server está funcional
+
+Instale o SSMS pelo link https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16
+
+E faça as configurações de conexão conforme a imagem abaixo.
+
+![alt text](img\MSSMS.png)
+
+Divirta-se
