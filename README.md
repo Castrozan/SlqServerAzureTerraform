@@ -48,6 +48,6 @@ Instale o SSMS pelo link https://learn.microsoft.com/en-us/sql/ssms/download-sql
 
 E faça as configurações de conexão conforme a imagem abaixo.
 
-![alt text](img\MSSMS.png)
+![alt text](https://github.com/Castrozan/SlqServerAzureTerraform/blob/master/img/MSSMS.png)
 
 Divirta-se
