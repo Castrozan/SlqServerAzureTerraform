@@ -1,4 +1,4 @@
-### Como configuirar e provisionar um banco de dados SQL Server via Terraform
+### Como configurar e provisionar um banco de dados SQL Server via Terraform
 
 Gere a área restrita em: 
 
@@ -10,7 +10,7 @@ Ela vai permitir que você tenha espaço na nuvem da Microsoft de forma gratuita
 
 Após gerar a área restrita, entre em https://portal.azure.com/#settings/directory e altere o diretório de trabalho para o diretório da Sandbox
  
-Por fim, entre em https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups e copie e cole o nome do grupo de recursos no arquivo variables.tf
+Entre em https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups e copie e cole o nome do grupo de recursos no arquivo variables.tf
 
 ```hcl
 variable "resource_group_name" {
@@ -24,7 +24,7 @@ Consulte seu ip em https://meuip.com.br/ e cole ele aqui
 
 ```hcl
 variable "ip" {
-  default = "189.8.209.3"    <--- aqui entre as aspas
+  default = "189.8.209.3"  <--- aqui entre as aspas
 }
 ```
 
