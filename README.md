@@ -35,6 +35,8 @@ terraform.tfstate
 Siga os passos em https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli para baixar o Azure CLI
 
 Ao baixar abra um terminal e rode o comando `AZ LOGIN`
+
+Para identificar seu grupo de recurso criado use o comando  `az group list`
  
 Siga os passos em https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli para baixar o Terraform
 
