@@ -17,8 +17,6 @@ resource "azurerm_mssql_server" "sql" {
   location            = var.location
   version             = "12.0"
 
-  
-
   administrator_login          = var.usuario_admin
   administrator_login_password = var.password
 }
@@ -35,4 +33,11 @@ resource "azurerm_mssql_database" "sql" {
   read_scale                  = false
   sku_name                    = "GP_S_Gen5_10"
   zone_redundant              = false
+}
+
+resource "azurerm_mssql_firewall_rule" "sql" {
+  name                = "FirewallRule1"
+  server_id           = azurerm_mssql_server.sql.id
+  start_ip_address    = var.ip
+  end_ip_address      = var.ip
 }
