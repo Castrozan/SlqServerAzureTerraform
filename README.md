@@ -53,6 +53,3 @@ E faça as configurações de conexão conforme a imagem abaixo.
 ![alt text](https://github.com/Castrozan/SlqServerAzureTerraform/blob/master/img/MSSMS.png)
 
 Divirta-se
-
-
-aaa
