@@ -6,6 +6,9 @@ https://learn.microsoft.com/pt-br/training/modules/create-serverless-logic-with-
 ou
 https://learn.microsoft.com/pt-br/training/modules/build-api-azure-functions/2-exercise-setup-project
 
+// this has ubuntu permission
+https://learn.microsoft.com/pt-br/training/modules/create-first-aks-edge-essentials/3-exercise-deploy-aks-edge-essentials
+
 Ela vai permitir que você tenha espaço na nuvem da Microsoft de forma gratuita.
 
 Após gerar a área restrita, entre em https://portal.azure.com/#settings/directory e altere o diretório de trabalho para o diretório da Sandbox
