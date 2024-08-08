@@ -9,6 +9,11 @@ https://learn.microsoft.com/pt-br/training/modules/build-api-azure-functions/2-e
 // this has ubuntu permission
 https://learn.microsoft.com/pt-br/training/modules/create-first-aks-edge-essentials/3-exercise-deploy-aks-edge-essentials
 
+connect with ssh using 
+```bash
+ssh -i C:\Users\lucas.69412/.ssh/id_rsa.pom
+```
+
 Ela vai permitir que você tenha espaço na nuvem da Microsoft de forma gratuita.
 
 Após gerar a área restrita, entre em https://portal.azure.com/#settings/directory e altere o diretório de trabalho para o diretório da Sandbox
